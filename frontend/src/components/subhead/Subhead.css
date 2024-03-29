@@ -1,0 +1,48 @@
+.subhead p::selection,
+.subhead h2::selection{
+    background: salmon;
+    color:white;
+}
+.subhead{
+    margin: 3rem auto;
+    text-align: center;
+}
+.subhead h2{
+    position: relative;
+    width: max-content;
+    margin: auto;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-main);
+    font-weight: 600;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+.subhead h2::before{
+    position: absolute;
+    bottom: 0;
+    content: '';
+    height: 2px;
+    width: 100%;
+    transition: var(--transition-3);
+    background: var(--color-yellow);
+}
+.subhead h2:hover::before{
+    width: 200%;
+    background: var(--color-red);
+}
+.subhead p{
+    max-width: 60%;
+    margin: auto;
+    font-style: italic;
+    transition: var(--transition-3);
+}
+.subhead p:hover{
+    color: var(--color-main);
+}
+@media only screen and (max-width: 600px){
+    .subhead p{
+        max-width: 95%;
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  /* list-style: none; */
+}
+:root{
+  --color-main: #2E3F97;  
+  --color-main-light: #53b6fd;  
+  --color-red: #f44336;  
+  --color-red-1: #e95144;  
+  --color-orange: #ff905a;
+  --color-yellow: #ecc91f;
+  --color-grey: #a8a9a8;
+  --color-light-weight: #e7f1ff;
+  --color-grey-text: hsl(0,0%,47%);
+  --color-black: #000000;
+  --color-black-light: #3a3e45;
+  --color-white: #ffffff;
+
+  --color-anchor: #0d6efd;
+  --color-blue: #4d8aff;
+  --color-dark-blue: #004269;
+  --color-blu : #4387c0;
+  --color-blue-light : #00AAA9;
+  --color-green : rgb(44, 185, 16);
+  --border-color-1 : rgba(101, 119, 134, 0.36);
+  --transition-3: all 300ms ease-in;
+  --transition-4: all 400ms ease-in;
+}
+
+
+
+/* --- Universal Styling ---  */
+ol, ul {
+  padding-left: 0rem;
+  margin-bottom: 0rem;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+p{
+  margin-bottom: 0rem;
+}
+img{
+  width: 100%;
+}
+
+
+
+/* ----  */
+.btn-mar{
+  margin: 2rem 0rem;
+}
+.bg-btn {
+  color: white;
+  background: var(--color-main);
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  transition: all 400ms ease-in;
+}
+.bg-btn:hover {
+  background: var(--color-yellow);
+  color: white;
+}
+
+
+.btn-1 {
+  color: var(--color-main);
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid var(--color-main);
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: 600;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn-1:hover {
+  color: white;
+}
+
+.btn-1::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: var(--color-main);
+  z-index: -1;
+  transition: all 1s;
+}
+
+.btn-1:hover::before {
+  width: 160%;
+}
+
+
+.bg-blue{
+  background: var(--color-main);
+  color: white;
+  padding: 0.5rem 0.8rem;
+}
+
+.uls ol{
+  padding-left: 1rem;
+  list-style-type:disc;
+}

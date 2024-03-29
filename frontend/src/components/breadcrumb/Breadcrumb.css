@@ -1,0 +1,34 @@
+.breadHead{
+    padding: 3rem 0rem;
+    background: var(--color-main);
+    margin-bottom: 3rem;
+}
+.breadHead h2{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+.breadcrumb{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.breadcrumb li a{
+    color: white ;
+}
+.breadcrumb-item.active {
+    color: var(--color-main-light);
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: .5rem;
+    color: white;
+    content: var(--bs-breadcrumb-divider, "/");
+}
+@media only screen and (max-width: 500px){
+    .breadHead h2 {
+        font-size: 2rem;
+    }
+}
+
+

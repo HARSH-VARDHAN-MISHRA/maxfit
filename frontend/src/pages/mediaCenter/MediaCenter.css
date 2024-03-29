@@ -1,0 +1,12 @@
+.singleMedia img {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+}
+.singleMedia .eventName{
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    background: var(--color-main);
+}

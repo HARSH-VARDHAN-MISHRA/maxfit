@@ -1,0 +1,53 @@
+.litexContent .litexLogo{
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    margin: 3rem 0rem;
+}
+.litexContent h3{
+    color: var(--color-red-1);
+    padding: 0.2rem 0rem;
+}
+.litexContent .content p{
+    margin: 0.3rem 0rem;
+}
+
+/* --------------  */
+
+
+.cateGrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.cateGrid .singleCate{
+    border: 1px solid var(--color-main);
+}
+
+.cateGrid .singleCate img{
+    padding: 0.5rem ;
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
+}
+.cateGrid .singleCate h4{
+    padding: 0.5rem;
+    background: var(--color-main);
+    margin-bottom: 0rem;
+    color: white;
+}
+@media only screen and (max-width: 850px){
+    .cateGrid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+}
+@media only screen and (max-width: 500px){
+    .cateGrid{
+        grid-template-columns: repeat(2,1fr);
+        gap: 0.5rem;
+    }
+}
+
+

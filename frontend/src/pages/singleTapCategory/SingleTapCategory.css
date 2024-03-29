@@ -1,0 +1,38 @@
+.tabProducts .contents{
+    color: white;
+    background: var(--color-main);
+    padding: 0.5rem;
+}
+.tabProducts .contents .heading{
+    border-bottom: 1px solid white;
+    margin-bottom: 0.4rem;
+}
+.tabProducts .contents .flex-d{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.tabProducts .singleProduct{
+    border: 1px solid var(--color-main);
+    /* padding: 1.2rem; */
+}
+.tabProducts .singleProduct img{
+    padding: 0.5rem;
+    object-fit: contain;
+}
+@media only screen and (max-width: 450px){
+    .tabProducts .contents {
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-between;
+        color: white;
+        background: var(--color-main);
+        padding: 0.5rem;
+    }
+}
+
+
+
+
+
+

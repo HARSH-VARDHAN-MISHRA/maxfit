@@ -1,0 +1,91 @@
+.headLine h3{
+    font-size: 1.6rem;
+    color: var(--color-main);
+    text-transform: uppercase;
+}
+.headLine .line{
+    height: 3px;
+    width: 15%;
+    background: var(--color-main);
+    display: block;
+    margin-bottom: 1rem;
+}
+.smallHeadLine h4{
+    font-size: 1.1rem;
+    color: var(--color-yellow);
+    text-align: left;
+}
+.smallHeadLine .line{
+    height: 2px;
+    width: 25%;
+    background: var(--color-yellow);
+    display: block;
+    margin-bottom: 1rem;
+}
+.smallHeadLine.blue h4{
+    color: var(--color-main);
+}
+.smallHeadLine.blue .line{
+    background: var(--color-main);
+}
+
+
+
+.table-row table{
+    text-align: center;
+}
+.table-row th{
+    font-weight: 500;
+}
+.table-row .main{
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background: var(--color-main);
+}
+
+
+.table-row ol{
+    padding-left: 2rem;
+    list-style-type:disclosure-closed ;
+    list-style-image: -webkit-linear-gradient();
+}
+.table-row ol li{
+    padding: 0.2rem 0rem;
+}
+
+
+/* ------- Icons ----  */
+.singIco{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1rem;
+    padding: 2rem 0rem ;
+    background: var(--color-light-weight);
+}
+.singIco .icon{
+    text-align: center;
+}
+.singIco img{
+    text-align: center;
+    width: auto;
+    height: 60px;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+@media only screen and (max-width: 770px){
+    .singIco{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media only screen and (max-width: 450px){
+    .singIco{
+        gap: 0rem;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .singIco img {
+        height: 40px;
+        margin-bottom: 1rem;
+    }
+}
+
